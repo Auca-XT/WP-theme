@@ -1,6 +1,7 @@
 { pkgs }: {
 	deps = [
-		pkgs.wget
+		pkgs.python39Packages.pip
+  pkgs.wget
   pkgs.php74
 	];
 }

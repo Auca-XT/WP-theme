@@ -8,4 +8,8 @@ function newtheme_files() {
   wp_enqueue_style('newtheme_extra_styles', get_theme_file_uri('/build/index.css')); 
 }
 
+function newtheme_features() {
+  add_theme_support('title_tag'); 
+}
 add_action('wp_enqueue_scripts',  'newtheme_files');
+add_action('after_setup_theme' 'newtheme_features');
